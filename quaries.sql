@@ -59,3 +59,13 @@ SELECT
     END AS category
 FROM 
     pokemon;
+
+SELECT 
+    name, 
+    Type_2, 
+    hp, 
+    attack
+FROM 
+    pokemon
+WHERE 
+    (hp > 70 AND attack > 70) OR Type_2 = 'Fire';
