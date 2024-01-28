@@ -48,3 +48,14 @@ GROUP BY
     Type_2 = 'Poison' 
 HAVING 
     AVG(attack) > 70;
+
+
+SELECT 
+    name,
+    CASE 
+        WHEN attack > 100 THEN 'High Attack'
+        WHEN defense > 100 THEN 'High Defense'
+        ELSE 'Balanced' 
+    END AS category
+FROM 
+    pokemon;
