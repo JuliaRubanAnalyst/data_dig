@@ -49,7 +49,6 @@ GROUP BY
 HAVING 
     AVG(attack) > 70;
 
-
 SELECT 
     name,
     CASE 
