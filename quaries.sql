@@ -37,3 +37,14 @@ SELECT
     MIN(defense) AS min_defense
 FROM 
     pokemon;
+
+SELECT 
+    Name,
+    AVG(attack) AS avg_attack,
+    AVG(defense) AS avg_defense
+FROM 
+    pokemon
+GROUP BY 
+    Type_2 = 'Poison' 
+HAVING 
+    AVG(attack) > 70;
